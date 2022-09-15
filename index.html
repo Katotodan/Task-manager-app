@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task manager</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="container--header">
+            <label for="task-title">Enter new task</label><br><br>
+            <input type="text" id="task-title" required>
+        </form>
+        <div class="container--main"></div>
+    </div>
+    <form class="editForm">
+        <div class="red-cross">❌</div>
+        <h2 class="element--id">
+            Element Id: 
+        </h1>
+        <input type="text" id="text-input" placeholder="New task update">
+        <br>
+        <p class="complited">
+            <input type="checkbox" id="complited" >
+            <label for="complited">Task complited</label>
+        </p>
+        <p class="button">
+            <button class="cancel">Cancel</button>
+            <button class="done">Done</button>
+        </p>
+        
+    </form>
+
+    <script src="./script.js"></script>
+</body>
+</html>
