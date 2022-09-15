@@ -35,8 +35,19 @@ body{
 .main--child{
     width: 100%;
     display: flex;
-    justify-content: space-between;
     margin-bottom: 0.7rem;
+    word-wrap: break-word;
+}
+.main--child p:first-child{
+    width: 10%;
+}
+.main--child p:last-child{
+    width: 20%;
+    margin-left: 0.5rem;
+}
+.main--child p:nth-child(2){
+    width: 70%;
+    text-align: center;
 }
 /* Edit form style */
 .editForm{
@@ -74,11 +85,19 @@ body{
 .done{
     background-color: rgb(81, 81, 189);
 }
+.edit{
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+.delete{
+    cursor: pointer;
+}
 .done, .cancel{
     padding: 0.7rem;
     border: 0;
     margin-right: 0.5rem;
     width: 6rem;
+    cursor: pointer;
 }
 .crossTask{
     text-decoration: line-through;
@@ -133,6 +152,15 @@ body{
         margin-left: 0;
         padding-left: 1rem;
     }
+    .main--child p:last-child{
+        width: 30%;
+        text-align: right;
+
+        
+    }
+    .main--child p:nth-child(2){
+        width: 60%;
+    }
 }
 @media screen and (max-width : 375px) {
     
@@ -148,4 +176,5 @@ body{
         padding-right: 0.5rem;
         
     }
+    
 }
